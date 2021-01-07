@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.domain.Board;
+import com.example.demo.domain.entity.Board;
 import com.example.demo.domain.repository.BoardRepository;
 import com.example.demo.dto.BoardDto;
 import org.springframework.stereotype.Service;
@@ -49,6 +49,7 @@ public class BoardService {
                 .author(board.getAuthor())
                 .title(board.getTitle())
                 .content(board.getContent())
+                .fileId(board.getFileId())
                 .createdDate(board.getCreatedDate())
                 .build();
         return boardDto;
