@@ -18,7 +18,7 @@ public class BoardService {
     }
 
     @Transactional
-    public Long savaPost(BoardDto boardDto){
+    public Long savePost(BoardDto boardDto){
         return boardRepository.save(boardDto.toEntity()).getId();
     }
 
@@ -52,5 +52,10 @@ public class BoardService {
                 .createdDate(board.getCreatedDate())
                 .build();
         return boardDto;
+    }
+
+    @Transactional
+    public void deletePost(Long id) {
+        boardRepository.deleteById(id);
     }
 }
