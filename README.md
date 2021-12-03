@@ -1,6 +1,6 @@
 # SpringBootStudy
 
-첫 웹개발 시작으로
+스프링 리마인드 용으로
 
 springboot + gradle + mysql을 이용하여 간단하게 게시판 만들기를 따라해봤다.
 
